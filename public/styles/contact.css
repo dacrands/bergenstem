@@ -1,0 +1,29 @@
+
+.contact header {
+    height: 200px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background: blueviolet; */
+}
+
+.contact {
+    /* height: 80vh; */
+    margin-bottom: 5%;
+    color: rgb(48, 45, 45);
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.contact-img {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.contact-img img {
+    box-shadow: none;
+}
