@@ -1,27 +1,29 @@
-const express    = require("express"),
+const express    = require('express'),
       app        = express(),
-      ejs        = require("ejs"),
-      mongoose   = require("mongoose"),
-      bodyParser = require("body-parser");
+      ejs        = require('ejs'),
+      mongoose   = require('mongoose'),
+      seedDB     = require('./seed'),
+      bodyParser = require('body-parser');
 
 
-app.set("view engine", "ejs");
+app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
-app.use(express.static(__dirname + "/public"));
-app.use(express.static(__dirname + "/src"));
+app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/src'));
       
 //MongoDB
-mongoose.connect("mongodb://localhost:27017/project");
+mongoose.connect('mongodb://localhost:27017/project');
+seedDB();
 
 // ROUTES
-const indexRoutes   = require("./routes/index"),
-      projectRoutes = require("./routes/projects");
+const indexRoutes   = require('./routes/index');
+const projectRoutes = require('./routes/projects');
 
 
-app.use("/", indexRoutes);
-app.use("/projects", projectRoutes);
+app.use('/', indexRoutes);
+app.use('/projects', projectRoutes);
 
 
 app.listen(8888, process.env.IP,  () => {
-    console.log("app online");
+    console.log('app online');
 });

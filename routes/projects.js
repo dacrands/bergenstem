@@ -1,18 +1,25 @@
 const express = require('express'),
       router  = express.Router(),
-      Project = require("../models/projects");
+      Project = require('../models/projects');
 
 router.get("/", (req, res) =>{
-    res.render('projects/index');
+    Project.find({}, function(err, allProjects) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(allProjects);
+            res.render('projects/index', {projects: allProjects});
+        }
+    });
 });
 
 router.post("/", (req, res) => {
-    let projectName = req.body.projectName,
+    let name = req.body.name,
           image = req.body.image,
           desc = req.body.desc,
           newProject = {
-                projectName:  projectName,
-                image: image,
+                name:  name,
+                img: image,
                 desc: desc
             };
 
