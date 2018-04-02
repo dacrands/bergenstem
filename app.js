@@ -24,6 +24,6 @@ app.use('/', indexRoutes);
 app.use('/projects', projectRoutes);
 
 
-app.listen(8888, process.env.IP,  () => {
+app.listen(process.env.PORT, process.env.IP,  () => {
     console.log('app online');
 });
