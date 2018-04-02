@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/src'));
       
 //MongoDB
-mongoose.connect('mongodb://localhost:27017/project');
+mongoose.connect(process.env.DATABASEURL);
 seedDB();
 
 // ROUTES
