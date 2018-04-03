@@ -20,60 +20,16 @@
     <section class="projects">
         <% projects.forEach(function(project){ %>
             <div class="project">
-                <h3><%= project.name%></h3> 
+                <h3><%= project.name %></h3> 
                 <img class="project-img" src="<%= project.img%>" alt="">
                 <div class="project__overlay">                
                         <p>
                             <%= project.desc.substring(0,100);%>...
                         </p>                        
                     </div>
-                    <a href="project.html"><button class="btn btn-outline-dark">View →</button></a>                 
+                    <a href="/projects/<%= project._id%>"><button class="btn btn-outline-dark">View →</button></a>                 
                 </div>
         <% }); %>
-
-
-
-
-
-        
-
-        <div class="project">          
-            <h3>Radio Drove and Meteor Studies</h3>  
-            <img class="project-img" src="http://www.bergenstem.org/images/radio.jpg" alt="">
-            <div class="project__overlay">                
-                <p>The Radio JOVE Project was funded by NASA in 1998 to help promote interest 
-                    in radio astronomy and associated technology among high school and college students...
-                </p>                        
-            </div>
-            <a href="project.html"><button class="btn btn-outline-dark">View →</button></a>                 
-        </div>
-
-        <div class="project">          
-            <h3>Solar Concentrator</h3>  
-            <img class="project-img" src="http://www.bergenstem.org/images/solar.jpg" alt="">
-            <div class="project__overlay">                
-                <p>
-                    The purpose of this project is to produce electricity
-                    by using the solar energy. In order to do so, STEM students 
-                    bend a plastic-glass into a shape of a parabola by applying a 
-                    momentum and force on the edges.
-                </p>                        
-            </div>
-            <a href="project.html"><button class="btn btn-outline-dark">View →</button></a>                 
-        </div>
-
-        <div class="project">  
-            <h3>High Altitude Balloon</h3>          
-            <img class="project-img" src="http://www.bergenstem.org/images/highalt1.jpg" alt="">
-            <div class="project__overlay">                
-                <p>
-                    The High Altitude Balloon team builds electronic sensor
-                    payloads as well as other types of experiments and launches
-                    them 100,000 feet into the air...
-                </p>                            
-            </div>
-            <a href="project.html"><button class="btn btn-outline-dark">View →</button></a>
-        </div>
                 
         <div class="project">          
             <h3>Rocket Team</h3>  

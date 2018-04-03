@@ -1,6 +1,6 @@
 body {
     margin-top: 60px;
-    background: #e7e4e9;
+    /* background: #e7e4e9; */
 }
 
 h1 {
@@ -37,6 +37,7 @@ header {
 
 
 .project {
+    background: rgb(231, 231, 235);
     width: 350px;
     height: 350px;
     margin: 2%;
@@ -46,7 +47,7 @@ header {
     justify-items: center;
     grid-template-columns: 1;
     grid-template-rows: 50px 1fr 60px;    
-    background: #ffff;
+    /* background: #ffff; */
     border-radius: 2%;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 
@@ -72,6 +73,7 @@ header {
 .project .btn {
       align-self: center;
       box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      background: white;
   }
 
 .project__overlay {
