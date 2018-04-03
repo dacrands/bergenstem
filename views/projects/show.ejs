@@ -1,0 +1,20 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1><%= project.name %></h1>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <p><%= project.desc %></p>
+        </div>
+        <div class="col-md-6">
+            <img src="<%=project.img%>" alt="" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer %>
