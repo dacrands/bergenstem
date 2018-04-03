@@ -83,7 +83,6 @@ img, .embed-responsive  {
 ================= */
 .content {
     /* outline: 1px solid orangered; */
-
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
@@ -94,7 +93,6 @@ img, .embed-responsive  {
 
 .content-text {
     /* outline: 1px solid midnightblue; */
-
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -106,10 +104,6 @@ img, .embed-responsive  {
 /* =================
     RESEARCH
 ================= */
-
-/* .background-fluid{
-    background: #e7e4e9;
-} */
 
 .video-text {
     align-self: center;
@@ -126,7 +120,6 @@ img, .embed-responsive  {
 
 .media  {
     /* outline: 1px solid pink; */
-
     min-height: 70vh;
     padding: 40px;
     display: grid;    

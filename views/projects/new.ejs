@@ -8,19 +8,38 @@
 
 <div class="contact-form container">
   <form action="/projects" method="POST">
-    <div class="form-group">
-      <label for="projectName">Project Name</label>
-      <input type="text" class="form-control" name="name" id="projectName" aria-describedby="emailHelp" placeholder="Project Name">
-    </div>
-    <div class="form-group">
-      <label for="image">Image URL</label>
-      <input type="text" class="form-control" name="image" id="image" placeholder="Image URL">
-    </div>
-    <div class="form-group">
-      <label for="textarea">Example textarea</label>
-      <textarea class="form-control" name="desc" id="textarea" rows="3"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="projectName">Project Name</label>
+            <input type="text" class="form-control" name="name" id="projectName" aria-describedby="emailHelp" placeholder="Project Name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="image">Image URL</label>
+          <input type="text" class="form-control" name="image" id="image" placeholder="Image URL">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="image">Advisor</label>
+          <input type="text" class="form-control" name="advisor" id="advisor" placeholder="Faculty Advisor">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="textarea">Project Description</label>
+          <textarea class="form-control" name="desc" id="textarea" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="textarea">Team</label>
+          <textarea class="form-control" name="team" id="textarea" rows="3" placeholder="Separate names with semi-colon"></textarea>
+        </div>
+      </div>
+         
+     
+      <button type="submit" class="btn btn-primary">Submit</button>
+         
+    
+
   </form>
 </div>
 </div>

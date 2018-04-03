@@ -72,8 +72,12 @@ header {
 
 .project .btn {
       align-self: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.5);
       background: white;
+  }
+
+.project .btn:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   }
 
 .project__overlay {
@@ -96,11 +100,23 @@ header {
     color: aliceblue;
 }
 
-.project__overlay button {
-    border: 1px solid rgb(123, 127, 129);
-    text-align: center;
-}
 
 .project:hover .project__overlay {
     transform: translateX(0);
+}
+
+
+/* ========
+  SHOW
+======== */
+.project-show .row:nth-child(2) {
+    margin-bottom: 50px;
+}
+
+.col-md-6:first-of-type {
+    align-self: center;
+}
+
+.col-md-6:nth-of-type(2) {
+    padding: 20px;
 }

@@ -16,10 +16,14 @@ router.post("/", (req, res) => {
     let name = req.body.name,
         image = req.body.image,
         desc = req.body.desc,
+        team = req.body.team,
+        advisor = req.body.advisor
         newProject = {
             name:  name,
             img: image,
-            desc: desc
+            desc: desc,
+            team: team,
+            advisor: advisor
         };
 
     Project.create(newProject, (err, newlyCreated) => {
