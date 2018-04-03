@@ -18,6 +18,11 @@ const seedData = [
         name: 'High Altitude Balloon',
         img: 'http://www.bergenstem.org/images/highalt1.jpg',
         desc: "The High Altitude Balloon team builds electronic sensorpayloads as well as other types of experiments and launches them 100,000 feet into the air..."
+    },
+    {
+        name: 'Rocket Team',
+        img: 'http://www.bergenstem.org/images/rocket.jpg',
+        desc: "Researchers have been exploring methods to maximize growth and lipid production in algae. Algae are the most promising candidates for future fuels because of their unique ability to produce a high lipid concentration."
     }
 ]
 
