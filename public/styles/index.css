@@ -107,9 +107,9 @@ img, .embed-responsive  {
     RESEARCH
 ================= */
 
-.background-fluid{
+/* .background-fluid{
     background: #e7e4e9;
-}
+} */
 
 .video-text {
     align-self: center;
@@ -199,7 +199,7 @@ img, .embed-responsive  {
 
     
     
-    .video {
+    .media {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
