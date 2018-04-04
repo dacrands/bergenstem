@@ -113,10 +113,10 @@ header {
     margin-bottom: 50px;
 }
 
-.col-md-6:first-of-type {
+.project-show .col-md-6:first-of-type {
     align-self: center;
 }
 
-.col-md-6:nth-of-type(2) {
+.project-show .col-md-6:nth-of-type(2) {
     padding: 20px;
 }

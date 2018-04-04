@@ -12,11 +12,7 @@
         
 
 
-<div id="phys-btn" class="field">
-    <div class="field-title container">
-        <h1>Physics</h1>
-        <hr>
-    </div>      
+   
     <section class="projects">
         <% projects.forEach(function(project){ %>
             <div class="project">
@@ -30,25 +26,10 @@
                     <a href="/projects/<%= project._id%>"><button class="btn btn-outline">View →</button></a>                 
                 </div>
         <% }); %>
-                
-   
-        <div class="project">  
-            <h3>Seismometer</h3>          
-            <img class="project-img" src="http://www.bergenstem.org/images/seismograph.jpg" alt="">
-            <div class="project__overlay">                
-                <p>
-                    One of STEM’s many unique outputs for students 
-                    to come and work together is with the seismometer
-                    project. Seismometers (or seismographs) by definition,
-                        are the instruments that...
-                </p>                            
-            </div>
-            <a href="project.html"><button class="btn btn-outline-dark">View →</button></a>
-        </div>    
     </section>
-</div>
-</div>
-<!-- ~~~~~ENGINEERING~~~~~ -->
+
+
+<!-- 
 <div id="eng" class="field">
     <div class="container field-title">
         <h1>Engineering</h1>
@@ -239,6 +220,6 @@
             <a href="project.html"><button class="btn btn-outline-dark">View →</button></a>
         </div>                                
     </section>                                    
-</div>
+</div> -->
 
 <% include ../partials/footer %>
