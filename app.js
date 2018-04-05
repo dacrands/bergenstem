@@ -28,7 +28,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
       
 // MONGODB
-mongoose.connect("DATABASEURL");
+mongoose.connect(process.env.DATABASEURL);
 // seedDB();
 
 // ROUTES
