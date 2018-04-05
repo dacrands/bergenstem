@@ -19,12 +19,14 @@
                 <h3><%= project.name %></h3> 
                 <img class="project-img" src="<%= project.img%>" alt="">
                 <div class="project__overlay">                
-                        <p>
-                            <%= project.desc.substring(0,100);%>...
-                        </p>                        
-                    </div>
-                    <a href="/projects/<%= project._id%>"><button class="btn btn-outline">View →</button></a>                 
+                    <p>
+                        <%= project.desc.substring(0,100);%>...
+                    </p>                        
                 </div>
+                <div class="project-btn">
+                    <a href="/projects/<%= project._id%>"><button class="btn btn-outline">View →</button></a>                 
+                </div>                
+            </div>
         <% }); %>
     </section>
 
