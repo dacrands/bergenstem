@@ -4,9 +4,9 @@ const express       = require('express'),
       mongoose      = require('mongoose'),
       seedDB        = require('./seed'),
       bodyParser    = require('body-parser'),
-    //   passport      = require('passport'),
+      passport      = require('passport'),
       localStrategy = require('passport-local'),
-      Admin         = require('./models/admin');
+      User          = require('./models/user');
 
 
 app.set('view engine', 'ejs');
@@ -15,17 +15,17 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/src'));
 
 // PASSPORT
-// app.use(require('express-session')({
-//     secret: "Time is fun",
-//     resave: false,
-//     saveUnitialized: false
-// }));
+app.use(require('express-session')({
+    secret: "Time is fun",
+    resave: false,
+    saveUnitialized: false
+}));
 
-// app.use(passport.initialize());
-// app.use(passport.session());
-// passport.use(new localStrategy(Admin.authenticate()));
-// passport.serializeUser(Admin.serializeUser());
-// passport.deserializeUser(Admin.deserializeUser());
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new localStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
       
 // MONGODB
 mongoose.connect("mongodb://localhost:27017/projects");

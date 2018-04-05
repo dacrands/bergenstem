@@ -4,7 +4,7 @@ const nav = document.querySelector('.navbar');
 const navIcon = document.querySelector('.navbar-icon');
 
 window.addEventListener('scroll', () =>{
-    if (window.scrollY >= ((landing.scrollHeight)/10)) {
+    if (window.scrollY >= (1)) {
         nav.classList.remove('navbar-landing', 'navbar-dark');
         nav.classList.add('navbar-bg','navbar-light');
     } else {
@@ -13,11 +13,17 @@ window.addEventListener('scroll', () =>{
     }
 });
 
+$('.navbar-toggler').click(() => {
+    console.log('Tester');
+    nav.classList.remove('navbar-landing', 'navbar-dark');
+    nav.classList.add('navbar-bg', 'navbar-light');
+});
+
 const pattern = Trianglify({
     width: window.innerWidth,
     height: window.innerHeight/2,
     cell_size: 70,
-    x_colors: ["#d64e00","#995201","#72105f","#5d007c"],
+    x_colors: ["#5d007c","#72105f","#995201","#d64e00"],
     y_colors: 'match_x',
 });
 pattern.canvas(document.getElementById('myCanvas'));
