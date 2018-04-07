@@ -1,11 +1,11 @@
 const about = document.querySelector('.about');
 const landing = document.querySelector('.landing-container');
 const nav = document.querySelector('.navbar');
-const navIcon = document.querySelector('.navbar-icon');
+const navMenu = document.querySelector('#navbarNavDropdown');
+// const navIcon = document.querySelector('.navbar-icon');
 
 window.addEventListener('scroll', () =>{
-    console.log('winning');
-    if (nav.classList.contains('navbar-landing')){
+    if (!navMenu.classList.contains('show')){
         if (window.scrollY >= (5)) {
             nav.classList.remove('navbar-landing', 'navbar-dark');
             nav.classList.add('navbar-bg','navbar-light');
@@ -19,7 +19,7 @@ window.addEventListener('scroll', () =>{
 $('.navbar-toggler').click(() => {
     // nav.classList.remove('navbar-landing', 'navbar-dark');
     // nav.classList.add('navbar-bg', 'navbar-light');
-    if (nav.classList.contains('navbar-landing')){
+    if (nav.classList.contains('navbar-landing') || window.scrollY < 5){
         nav.classList.toggle('navbar-landing');
         nav.classList.toggle('navbar-light');
         nav.classList.toggle('navbar-bg');
