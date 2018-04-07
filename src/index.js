@@ -4,19 +4,27 @@ const nav = document.querySelector('.navbar');
 const navIcon = document.querySelector('.navbar-icon');
 
 window.addEventListener('scroll', () =>{
-    if (window.scrollY >= (1)) {
-        nav.classList.remove('navbar-landing', 'navbar-dark');
-        nav.classList.add('navbar-bg','navbar-light');
-    } else {
-        nav.classList.add('navbar-landing', 'navbar-dark');    
-        nav.classList.remove('navbar-bg','navbar-light');
-    }
+    console.log('winning');
+    if (nav.classList.contains('navbar-landing')){
+        if (window.scrollY >= (5)) {
+            nav.classList.remove('navbar-landing', 'navbar-dark');
+            nav.classList.add('navbar-bg','navbar-light');
+        } else {
+            nav.classList.add('navbar-landing', 'navbar-dark');    
+            nav.classList.remove('navbar-bg','navbar-light');
+        }
+    }    
 });
 
 $('.navbar-toggler').click(() => {
-    console.log('Tester');
-    nav.classList.remove('navbar-landing', 'navbar-dark');
-    nav.classList.add('navbar-bg', 'navbar-light');
+    // nav.classList.remove('navbar-landing', 'navbar-dark');
+    // nav.classList.add('navbar-bg', 'navbar-light');
+    if (nav.classList.contains('navbar-landing')){
+        nav.classList.toggle('navbar-landing');
+        nav.classList.toggle('navbar-light');
+        nav.classList.toggle('navbar-bg');
+        nav.classList.toggle('navbar-dark');
+    }
 });
 
 const pattern = Trianglify({
