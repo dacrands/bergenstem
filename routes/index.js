@@ -20,23 +20,23 @@ router.get('/about', (req, res) => {
 // REGISTER
 // =========
 
-router.get('/register', (req, res) => {
-    res.render('register');
-});
+// router.get('/register', (req, res) => {
+//     res.render('register');
+// });
 
 
-router.post('/register', (req, res) => {
-    const newUser = new User({username: req.body.username});
-    User.register(newUser, req.body.password, (err, user) => {
-        if (err) {
-            console.log(err);
-            return res.render("/");
-        }
-        passport.authenticate('local')(req, res, ()=> {
-            res.redirect('/projects');
-        })
-    });
-});
+// router.post('/register', (req, res) => {
+//     const newUser = new User({username: req.body.username});
+//     User.register(newUser, req.body.password, (err, user) => {
+//         if (err) {
+//             console.log(err);
+//             return res.render("/");
+//         }
+//         passport.authenticate('local')(req, res, ()=> {
+//             res.redirect('/projects');
+//         })
+//     });
+// });
 
 
 // =========

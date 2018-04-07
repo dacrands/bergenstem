@@ -93,11 +93,13 @@ header {
       transition: all 0.1s;
 }
 
-
-
-.project .btn:hover {
+.project-btn .btn-light:hover {
       box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  }
+}
+
+.project-btn form {
+    display: inline-block;
+}
 
 .project__overlay {
     background: #313130be;

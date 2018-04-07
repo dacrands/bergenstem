@@ -61,5 +61,34 @@ router.get('/:id/edit', isLoggedIn, getProject, (req,res) => {
     res.render('projects/edit', {project: req.project});
 });
 
+//PUT - Update campground
+router.put('/:id', isLoggedIn, (req, res) => {
+    const newData = {
+        name: req.body.name,
+        img: req.body.image,
+        desc: req.body.desc,
+        team: req.body.team,
+        advisor: req.body.advisor
+    }
+    console.log(newData);
+    Project.findByIdAndUpdate(req.params.id, {$set: newData}, (err, project) => {
+        if (err) {
+            res.redirect('back');
+        } else{
+            res.redirect('/projects/' + project._id);
+        }
+    });
+});
+
+// DELETE
+router.delete('/:id', isLoggedIn, getProject, (req, res) => {
+    req.project.remove((err) => {
+        if (err) {
+            return res.redirect('/');
+        }
+        res.redirect('/projects');
+    });
+});
+
 
 module.exports = router;
