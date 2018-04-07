@@ -1,18 +1,23 @@
 const express = require('express'),
       router  = express.Router(),
+      middleware = require('../middleware'),
+      {isLoggedIn, getProject} = middleware;
       Project = require('../models/projects');
 
-router.get("/", (req, res) =>{
+router.get('/', (req, res) =>{
+    if(req.user) {
+        console.log('SUCESSS');
+    }
     Project.find({}, (err, allProjects) =>{
         if (err) {
             console.log(err);
         } else {
-            res.render('projects/index', {projects: allProjects});
+            res.render('projects/index', {projects: allProjects, currentUser:req.user});
         }
     });
 });
 
-router.post("/", (req, res) => {
+router.post('/', (req, res) => {
     let name = req.body.name,
         image = req.body.image,
         desc = req.body.desc,
@@ -30,7 +35,7 @@ router.post("/", (req, res) => {
         if(err) {
             console.log(err);
         } else {
-            res.redirect("/projects");
+            res.redirect('/projects');
         }
     });
 });
@@ -46,9 +51,14 @@ router.get('/:id', (req, res) => {
         if (err) {
             console.log("Whoops");
         } else {
-            res.render("projects/show", {project: foundProject});
+            res.render('projects/show', {project: foundProject});
         }
     });
+});
+
+//EDIT
+router.get('/:id/edit', isLoggedIn, getProject, (req,res) => {
+    res.render('projects/edit', {project: req.project});
 });
 
 

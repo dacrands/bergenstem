@@ -10,8 +10,8 @@
 </div>
     
     
+<%= currentUser %>
         
-
 
    
     <section class="projects">
@@ -27,7 +27,12 @@
                     </p>                        
                 </div>
                 <div class="project-btn">
-                    <a href="/projects/<%= project._id%>"><button class="btn btn-sm btn-outline">View →</button></a>                 
+                    <a href="/projects/<%= project._id%>"><button class="btn btn-sm btn-light">View →</button></a>                 
+                    <% if(currentUser) { %>
+                        <a href="/projects/<%= project._id%>/edit"><button class="btn btn-sm btn-warning">Edit</button></a>                 
+                        <a href="/projects/<%= project._id%>"><button class="btn btn-sm btn-danger">Delete</button></a>                 
+                    <% } %>
+                    
                 </div>                
             </div>
         <% }); %>
