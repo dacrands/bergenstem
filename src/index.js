@@ -2,7 +2,6 @@ const about = document.querySelector('.about');
 const landing = document.querySelector('.landing-container');
 const nav = document.querySelector('.navbar');
 const navMenu = document.querySelector('#navbarNavDropdown');
-// const navIcon = document.querySelector('.navbar-icon');
 
 window.addEventListener('scroll', () =>{
     if (!navMenu.classList.contains('show')){
@@ -17,8 +16,6 @@ window.addEventListener('scroll', () =>{
 });
 
 $('.navbar-toggler').click(() => {
-    // nav.classList.remove('navbar-landing', 'navbar-dark');
-    // nav.classList.add('navbar-bg', 'navbar-light');
     if (nav.classList.contains('navbar-landing') || window.scrollY < 5){
         nav.classList.toggle('navbar-landing');
         nav.classList.toggle('navbar-light');
@@ -37,8 +34,7 @@ const pattern = Trianglify({
 pattern.canvas(document.getElementById('myCanvas'));
 
 $(window).scroll(() => {
-    let wScroll = $(this).scrollTop();
-    
+    let wScroll = $(this).scrollTop();    
     $('.landing-title').css({
         'transform' : 'translate(0px, -' + wScroll/8 + '%)'
     });

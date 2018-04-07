@@ -1,9 +1,10 @@
 <% include ../partials/header %>
 
 <div class="project-header">
-    <header>
+    <header class=jumbotron>
         <div class="container">
-            <h1 class="display-1">Student Projects</h1>       
+            <h1 class="display-1">Student Projects</h1>  
+            <hr>            
         </div>
     </header>
 </div>
@@ -26,7 +27,7 @@
                     </p>                        
                 </div>
                 <div class="project-btn">
-                    <a href="/projects/<%= project._id%>"><button class="btn btn-outline">View →</button></a>                 
+                    <a href="/projects/<%= project._id%>"><button class="btn btn-sm btn-outline">View →</button></a>                 
                 </div>                
             </div>
         <% }); %>
