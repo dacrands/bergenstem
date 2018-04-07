@@ -16,7 +16,9 @@
     <section class="projects">
         <% projects.forEach(function(project){ %>
             <div class="project">
-                <h3><%= project.name %></h3> 
+                <div class="project-title">
+                    <h3><%= project.name %></h3> 
+                </div>                
                 <img class="project-img" src="<%= project.img%>" alt="">
                 <div class="project__overlay">                
                     <p>
