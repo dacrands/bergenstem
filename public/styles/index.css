@@ -12,7 +12,8 @@ p {
     
 }
 
-img, .embed-responsive  {
+img, iframe {
+    border: none;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
@@ -32,11 +33,9 @@ img, .embed-responsive  {
 .navbar-landing {    
     padding: 30px 30px;
     background: transparent;
+    color: white;
 }
 
-.jumbotron {
-   background: rgb(231, 231, 235);
-}
 
 /* =================
     LANDING
@@ -87,7 +86,7 @@ img, .embed-responsive  {
 
 
 .background-fluid {
-    background: #eceaf0;
+    background: #f5f4f4;
 }
 
 
@@ -119,7 +118,7 @@ img, .embed-responsive  {
     MEDIA
 ================= */
 
-.video-text {
+/* .video-text {
     align-self: center;
 }
 
@@ -129,10 +128,25 @@ img, .embed-responsive  {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+} */
+
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.video-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0
+}
 
-.media  {
+.media {
     /* outline: 4px solid pink; */
     min-height: 80vh;
     padding: 10%;
@@ -142,6 +156,7 @@ img, .embed-responsive  {
     align-items: center;
     justify-content: space-around;
 }
+
 
 .info-content {
     align-self: center;
@@ -176,11 +191,12 @@ img, .embed-responsive  {
 ================= */
 .footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
+    text-align: center;
     /* align-items: flex-end; */
     /* background: #eceaf0; */
     /* outline: 4px sandybrown; */

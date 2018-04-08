@@ -27,8 +27,9 @@ $('.navbar-toggler').click(() => {
 const pattern = Trianglify({
     width: window.innerWidth,
     height: window.innerHeight/2,
-    cell_size: 70,
+    cell_size: 120,
     x_colors: ["#5d007c","#72105f","#995201","#d64e00"],
+    // x_colors: ["#1f2021","#65696d"],
     y_colors: 'match_x',
 });
 pattern.canvas(document.getElementById('myCanvas'));
