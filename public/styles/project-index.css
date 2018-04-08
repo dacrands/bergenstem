@@ -12,12 +12,14 @@ header {
     display: flex;
     align-items: center;
 }
+
+.jumbotron {
+   background: none;
+}
 /* ============= */
 /*    FIELD      */
 /* ============= */
-.field {
-    margin-bottom: 50px;
-}
+
 
 /* ============= */
 /*    PROJECTS   */
@@ -130,18 +132,20 @@ header {
 /* ========
   SHOW
 ======== */
-.project-show .row:nth-child(2) {
-    margin-bottom: 50px;
+.project-show .row > * {
+    padding: 40px;
+    align-items: center;
+    /* outline: 4px solid teal; */
 }
 
 .project-show .col-md-12:first-of-type {
-    align-self: center;
+    display: flex;
 }
 
-.project-show .col-md-12:nth-of-type(2) {
-    padding: 40px;
-}
 
+/* ========
+  FOOTER
+======== */
 footer {
     margin-top: 50px;
 }
