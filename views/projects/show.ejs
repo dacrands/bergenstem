@@ -21,12 +21,12 @@
         <div class="col-md-4">
             <h4>Team</h4>
             <hr>
-            <ul>
+            <!-- <ul> -->
                 <% const teamArray = project.team.split(';');%>
                 <% teamArray.forEach((member) => { %>
-                    <li><%= member %></li>
+                    <p><%= member %></p>
                 <% }); %>
-            </ul>
+            <!-- </ul> -->
         </div>
         <div class="col-md-4">
             <h4>Advisor</h4>

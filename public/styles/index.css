@@ -17,7 +17,7 @@ img, iframe {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.h4, h5 {
+h3, h4, h5 {
     font-weight: 700;
 }
 
@@ -99,7 +99,7 @@ img, iframe {
     justify-content: space-around;
     flex-flow: wrap;
     padding: 2% 5%;
-    min-height: 50vh;
+    min-height: 40vh;
     align-content: center;   
     align-items: center;
 }
@@ -110,12 +110,12 @@ img, iframe {
     display: flex;
     flex-direction: column;
     height: 200px;
-    width: 320px;
+    max-width: 300px;
     margin: 3%;
 }
 
 /* =================
-    MEDIA
+    INFO
 ================= */
 
 /* .video-text {
@@ -146,7 +146,7 @@ img, iframe {
     top: 0
 }
 
-.media {
+.info {
     /* outline: 4px solid pink; */
     min-height: 80vh;
     padding: 10%;
@@ -162,6 +162,10 @@ img, iframe {
     align-self: center;
 }
 
+.info-content p:first-of-type {
+    font-size: 1.2rem;
+}
+
 /* =================
     RESEARCH
 ================= */
@@ -172,10 +176,6 @@ img, iframe {
 
 .about-container h5 {
     font-weight: bold;
-}
-
-.about-container .row {
-    /* margin: 50px 0; */
 }
 
 .about-container .row > *{
@@ -197,18 +197,33 @@ img, iframe {
     flex-wrap: wrap;
     padding: 20px;
     text-align: center;
+    align-content: center;
     /* align-items: flex-end; */
     /* background: #eceaf0; */
     /* outline: 4px sandybrown; */
 }
 
 .footer-item {
-    /* text-align: center; */
-    /* outline: 3px solid turquoise; */
     display: flex;
-    flex-direction: column;
-    margin: 5px;
+    flex-direction: column;  
+    /* outline: 4px solid green;   */
+    text-align: center;
+    margin: 15px 20px;
 }
+
+.footer-item .lead {
+    margin-top: 10px;
+}
+
+.footer-item:first-of-type{
+    align-self: center;
+}
+/* .footer-item:first-of-type {
+    text-align: left;
+}
+.footer-item:last-of-type {
+    text-align: right;
+} */
 
 /* 
 .footer .row{   
@@ -228,14 +243,14 @@ img, iframe {
     padding: 0;
 }
 
-.footer p:first-of-type {
+.footer .lead {
     /* font-weight: 700; */
     font-size: 1.3em;
     margin-bottom: 4px;
     text-align: center;
 }
 
-.footer .btn {
+.footer .btn, .footer a {
     margin: 3px 0;
     
 }
