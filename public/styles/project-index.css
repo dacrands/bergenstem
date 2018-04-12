@@ -24,6 +24,22 @@ header {
 /* ============= */
 /*    PROJECTS   */
 /* ============= */
+
+
+.projects-container {
+    display: grid;
+    /* grid-template-columns: 150px 1fr; */
+}
+
+.projects-container nav {
+    position: fixed;
+    top: 50%;
+    z-index: 4;
+
+}
+
+
+
 .projects {
     display: flex;
     flex-flow: row wrap;

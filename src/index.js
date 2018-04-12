@@ -27,9 +27,11 @@ $('.navbar-toggler').click(() => {
 const pattern = Trianglify({
     width: window.innerWidth,
     height: window.innerHeight/2,
-    cell_size: 120,
-    x_colors: ["#5d007c","#72105f","#995201","#d64e00"],
-    // x_colors: ["#1f2021","#65696d"],
+    cell_size: 250,
+    // x_colors: ["#5d007c","#72105f","#995201","#d64e00"],
+    // x_colors: ["#3dabc6","#93d9ea","#b2dde8","#f2f6f7"],
+    // x_colors: ["#8123af","#a674bf","#cfbcd8","#f5f2f7"],
+    x_colors: ["#290238","#421155","#7A4A8D","9A73A9"],
     y_colors: 'match_x',
 });
 pattern.canvas(document.getElementById('myCanvas'));

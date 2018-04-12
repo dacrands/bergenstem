@@ -32,7 +32,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
       
 // MONGODB
-mongoose.connect(process.env.DATABASEURL || 'mongodb://localhost/projects');
+mongoose.connect(process.env.DATABASEURL || 'mongodb://localhost/project');
 // seedDB();
 
 // ROUTES

@@ -1,6 +1,6 @@
 <% include ../partials/header %>
 
-<div class="project-header">
+<!-- <div class="project-header">
     <header class=jumbotron>
         <div class="container">
             <h1 class="display-1">Student Projects</h1>  
@@ -8,12 +8,30 @@
         </div>
     </header>
 </div>
-    
-    
+     -->
+
+    <header>
+        <div class="header">
+            <h1>
+            Student Projects
+            </h1>
+        </div>
+    </header>
+      
 <%= currentUser %>
         
+<div class="projects-container">
+    <!-- <nav>        
+        <ul>
+            <% projects.forEach(function(project){ %>
+            <li><a href="/projects/<%= project._id%>">
+                    <button class="btn btn-sm btn-light"><%= project.name %>></button>
+                </a>
+            </li>
+            <% }); %>
+        </ul>        
+    </nav> -->
 
-   
     <section class="projects">
         <% projects.forEach(function(project){ %>
             <div class="project">
@@ -41,4 +59,5 @@
         <% }); %>
     </section>
 
+</div>
 <% include ../partials/footer %>
