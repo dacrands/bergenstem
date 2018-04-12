@@ -26,8 +26,7 @@ $('.navbar-toggler').click(() => {
 
 const pattern = Trianglify({
     width: window.innerWidth,
-    height: window.innerHeight/2,
-    cell_size: 250,
+    cell_size: 70,
     // x_colors: ["#5d007c","#72105f","#995201","#d64e00"],
     // x_colors: ["#3dabc6","#93d9ea","#b2dde8","#f2f6f7"],
     // x_colors: ["#8123af","#a674bf","#cfbcd8","#f5f2f7"],
