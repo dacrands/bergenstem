@@ -27,7 +27,7 @@
     width: 100%;
     left: 0;
     top: 0;
-    padding: 10px;
+    /* padding: 10px; */
     display: grid;
     grid-template-columns: 100px 1fr;
     align-content: center;
@@ -38,27 +38,29 @@
   }
   
   nav ul {
-    align-self: center;
     /* outline: 3px solid blueviolet; */
+    align-self: center;    
     list-style: none;
     display: flex;
     justify-content: space-around;
     height: 100%;
     /* background: #212223; */
-    background: rgba(0,0,0,0.9);
+    background: none;
     margin: 0;
   }
   
   nav ul > * {
-  /*     outline: 4px solid red; */
+      outline: 4px solid red;
     font-weight: 100;
     align-self: center;
+    /* padding:10px; */
   }
   nav a {
-  /*     outline: 4px solid lime; */
+      outline: 4px solid lime;
     text-decoration: none;
     color: inherit;
-    display: block;
+    display: inline-block;
+    padding: 10px;
   /*   width:100%; */
   }
   
@@ -167,6 +169,7 @@
   
     .toggle-menu ul {
       margin: 0;
+      background: rgba(0,0,0,0.9);
     }
   
     .toggle-menu__show {

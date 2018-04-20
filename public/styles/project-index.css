@@ -121,7 +121,7 @@ header {
     display: inline-block;
 }
 
-/* .project__overlay {
+.project__overlay {
     background: #313130be;
     grid-column: 2 / -1;
     grid-row: 2 / 3;
@@ -135,7 +135,7 @@ header {
     transform: translateX(100%);
     padding: 15px;
     
-} */
+}
 
 .project__overlay p {
     color: aliceblue;
