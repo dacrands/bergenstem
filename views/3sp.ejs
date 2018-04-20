@@ -1,0 +1,368 @@
+<% include partials/header %>
+
+<!-- <style>
+
+        .header {
+            min-height: 45vh;
+            background: #dadada;
+            color: #3a3636;
+        }
+
+        .box{
+            /* outline: 3px solid salmon; */
+
+
+            font-size: 1.2rem;
+            display: grid;
+            width: 100%;
+            /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+            /* grid-template-columns: repeat(4, 25%); */
+            grid-template-areas: "a a b b c"
+                                 "a a b b c"
+                                 "a a b b c"
+                                 "a a b b d";
+            grid-auto-rows: 50px auto;
+            /* height: 100%; */
+            /* justify-content: center; */
+        }
+
+        .box-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        
+        .box:first-of-type .box-content:first-of-type {
+            /* background: #212121; */
+            background: #F7F7F7;
+            
+            grid-area: a;
+        }
+        .box:first-of-type .box-content:nth-of-type(2){
+            /* outline: 4px solid blueviolet; */
+            
+            /* background: #303030; */
+            background: #f0eeee;
+            grid-area: b;
+        }
+        .box:first-of-type .box-content:nth-of-type(3){
+            /* background: #424242; */
+            background: #dfdddd;
+            grid-area: c;
+        }
+
+        .box:first-of-type .box-content:last-of-type{
+            /* background: #595858; */
+            background: #d1cccc;
+            grid-area: d;
+        }
+
+      
+
+        .box h3 {
+            /* color: white; */
+            color: #424242;
+            margin-bottom: 50px;
+            /* text-align: center; */
+        }
+
+        .box p{
+            /* color: rgb(226, 223, 221); */
+            color: #212121;
+            /* align-self: center; */
+        }
+
+        .box-2 {
+            /* outline: 4px solid blueviolet; */
+            background: #999898;
+            display: grid;
+            align-content: space-around;            
+            grid-template-columns: repeat(auto-fill,minmax(600px, 1fr));
+            
+        }
+
+        .box-2 .box-content:nth-of-type(2) {
+            /* outline: 4px solid limegreen; */
+            background: #b6b5b5;
+        }
+
+        .box-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        }
+
+
+        .box-3 .box-content .lead {
+            color: rgb(80, 78, 77);
+        }
+
+        .box-3 p{
+            color: rgb(80, 78, 77);
+        }
+        
+        .box-content {
+            padding: 40px;
+        }
+
+        
+
+        .box-content .lead {
+            color: #424242;
+        }
+        
+
+        @media (max-width: 1200px) {
+            .box {
+                grid-template-areas: "a a a c c"
+                                     "a a a c c"
+                                     "b b b c c"
+                                     "b b b d d";
+            }
+
+            .header h1 {
+               font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+               font-size: 2.5rem;
+            }
+            .box {
+                grid-template-areas: "a a a a a"
+                                     "a a a a a"
+                                     "b b b b b"
+                                     "b b b b b"
+                                     "c c c c c"
+                                     "c c c c c"
+                                     "d d d d d"
+                                     "d d d d d";
+            }
+        }
+        
+        </style> -->
+        
+
+<header class="header">
+    <h1>STEM Student Scholars Program</h1>
+</header>
+
+
+<div class="box">
+    <div class="box-content">
+        <h3>KSA Learning</h3>
+        <p class="lead">
+            Knowledge
+        </p>
+        <p>Understandning principles
+            related to a particular subject
+        </p>
+        <p class="lead">
+            Skills
+        </p>
+        <p>
+            How to use something or
+            perform a particular task
+        </p>
+        <p class="lead">
+                Ability
+            </p>
+            <p>
+                A competence to perform a set
+                of behaviors that results in an
+                observable product
+            </p>
+    </div>
+    <div class="box-content">
+        <h3>Benefits</h3>
+       <div class="box-content__text">
+            <p>
+                The STEM Student Scholars Program shall promote excellence
+                in knowledge, skills and ability of a select group of STEM students        
+                to ensure their success in securing research internships and successful             
+                transfer to their targeted 4-year institution.
+            </p>
+            <p>
+                Students who successfully participate in the 
+                program shall have an opportunity in their 
+                second summer in the program to participate in 
+                an internship off campus in their target 4-year college or industry 
+            </p>
+       </div>
+       
+    </div>
+    <div class="box-content">
+        <h3>Purpose</h3>
+        <p>
+            The STEM Student Scholars Program shall promote excellence
+            in knowledge, skills and ability of a select group of STEM students        
+            to ensure their success in securing research internships and successful             
+            transfer to their targeted 4-year institution.
+        </p>
+    </div>
+    <div class="box-content">
+        <h3>Program Elements</h3>
+        <p class="lead">Academic</p>
+        <p class="lead">Research</p>
+        <p class="lead">Service</p>
+                   
+    </div>
+
+</div>
+<div class="box-2">
+    <div class="box-content">
+        <h4>
+            Eligibility Requirements
+        </h4>
+        <ol>
+            <li>STEM degree seeking</li>
+            <li>Finished 12 college level credits with no additional remediation required</li>
+            <li>Minimum 3.750 Cumulative GPA</li>
+        </ol>
+
+        <h4>
+        Admission Requirements
+        </h4>
+        <ol>
+            <li>Attended one information session</li>
+            <li>Maintained minimum 3.750 Cumulative GPA at end of Spring 2017 semester</li>
+            <li>Completed and submitted a 3SP application</li>
+            <li>Joined a 3SP Faculty Research Mentor’s project team for Summer I or Summer II internship</li>
+            <li>Will remain a Bergen student through the fall 2017 semester</li>
+        </ol>
+    <!-- </div>
+    <div class="box-content"> -->
+            <h4>
+                Ongoing Requirements to remain in good standing
+            </h4>
+            <ol>
+                <li>Successfully completed an on campus 3SP Summer I or Summer II internship</li>
+                <li>Working to complete 3SP Academic, Research and Service Requirements</li>
+                <li>Contributing member of the STEM Student Union club</li>
+                <li>Maintaining minimum 3.750 Cumulative GPA</li>
+                <li>Punctual and responsive to official 3SP communications</li>
+            </ol>
+    </div>
+
+    <div class="box-content">
+        <h4>Management of 3SP</h4> 
+        <p>
+        The program will be administered by a paid program coordinator (3SP Faculty Chair) working 
+        in conjunction with a team (cadre) of 3SP Faculty Research Mentors who shall meet on a 
+        monthly basis for the following purposes:
+        </p> 
+        <ul>
+            <li>To review admission applications into the program</li>
+            <li> To review the progress of individual students in the program and decide on censure and/or removal of students</li>
+            <li>To ensure that research internships on-campus are secured in the first summer of the students membership in the program</li>
+            <li>To ensure that research internships at a 4-year college or industry are secured in the second summer</li>
+        </ul>
+        <p>
+            All faculty involved in mentoring research projects as part of the program must participate in these monthly meetings.
+        </p>
+    </div>
+
+</div>
+
+
+<div class="box-3">
+    <div class="box-content">
+        <h4>3SP Program Elements</h4>
+    </div>
+    <div class="box-content">
+        <p class="lead">
+            Research elements
+        </p>
+        <p>
+            Students of the program must participate in:
+        </p>
+        <ol>
+            <li>On-campus faculty-mentored internship project in their first summer of the program.</li>
+            <li>Off-campus internship project in their second summer of the program.</li>
+            <li>The student shall contribute a minimum of 2 hours per week working on a project during the fall and spring semesters.</li>
+            <li>The student shall become a contributing member of the STEM Student Union club.</li>
+        </ol>
+    </div>
+    <div class="box-content">
+        <p class="lead">
+            Additional Research elements (determined by 3SP Faculty Research Mentors):
+        </p>
+        <ol>
+            <li>co-author with team members a weekly blog documenting project progress throughout Summer I or Summer II internships</li>
+            <li>co-author a professional quality poster of project for STEM C2 Research Summit at Bergen Community College</li>
+            <li> Give presentations at various events and meetings both on-campus and off-campus</li>
+        </ol>
+    </div>
+        
+    
+</div>
+
+   
+
+    
+
+    
+
+    
+
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h4>KSA Learning</h4>
+            <hr>
+            <p class="lead">
+                Knowledge
+            </p>
+            <p>Understandning principles
+                related to a particular subject
+            </p>
+            <br>
+            <p class="lead">
+                Skills
+            </p>
+            <p>
+                How to use something or
+                perform a particular task
+            </p>
+            <br>
+            <p class="lead">
+                Ability
+            </p>
+            <p>
+                A competence to perform a set
+                of behaviors that results in an
+                observable product
+            </p>
+        </div>
+        <div class="col-md-6 text-center">
+            <h4>Purpose</h4>
+            <hr>
+            <p>Understandning principles
+                related to a particular subject
+            </p>
+            <br>
+            <p class="lead">
+                Skills
+            </p>
+            <p>
+                How to use something or
+                perform a particular task
+            </p>
+            <br>
+            <p class="lead">
+                Ability
+            </p>
+            <p>
+                A competence to perform a set
+                of behaviors that results in an
+                observable product
+            </p>
+        </div>
+    </div>    
+</div> -->
+
+
+
+<% include partials/footer %>

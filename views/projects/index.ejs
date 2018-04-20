@@ -39,11 +39,11 @@
                     <p><%= project.name %></p> 
                 </div>                
                 <img class="project-img" src="<%= project.img%>" alt="">
-                <div class="project__overlay">                
+                <!-- <div class="project__overlay">                
                     <p>
                         <%= project.desc.substring(0,100);%>...
                     </p>                        
-                </div>
+                </div> -->
                 <div class="project-btn">
                     <a href="/projects/<%= project._id%>"><button class="btn btn-sm btn-light">View →</button></a>                 
                     <% if(currentUser) { %>

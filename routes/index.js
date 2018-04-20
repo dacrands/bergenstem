@@ -15,6 +15,10 @@ router.get('/about', (req, res) => {
     res.render('about');
 });
 
+router.get('/3sp', (req, res) => {
+    res.render('3sp');
+});
+
 
 // =========
 // REGISTER
