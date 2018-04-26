@@ -1,3 +1,7 @@
+import '../public/styles/index.css';
+import '../public/styles/menu.css';
+import './menu.js';
+
 const about = document.querySelector('.about');
 const landing = document.querySelector('.landing-container');
 const nav = document.querySelector('.navbar');
