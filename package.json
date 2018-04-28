@@ -4,9 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "postinstall": "webpack -p",
     "start": "npm run build",
-    "build": "webpack -d",
-    "build:prod": "webpack -p"
+    "build": "webpack -d"
   },
   "author": "dacrands",
   "license": "ISC",
