@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "postinstall": "webpack -p",
-    "start": "npm app.js",
+    "start": "node app.js",
     "dev": "webpack-dev-server --open -d",
     "build": "webpack -p",
     "postbuild": "webpack -p"
