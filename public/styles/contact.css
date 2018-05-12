@@ -1,14 +1,14 @@
-
+/* 
 .contact header {
     height: 200px;   
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* background: blueviolet; */
+
 }
 
 .contact {
-    /* height: 80vh; */
+
     margin-bottom: 5%;
     color: rgb(48, 45, 45);
 }
@@ -26,4 +26,110 @@
 
 .contact-img img {
     box-shadow: none;
+} */
+
+
+input,
+textarea {
+  /*   outline: 4px solid limegreen; */
+  border: none;
+  margin: 5px 0;
+/*   border-radius: 15px; */
+  line-height: 1.8;
+  font-size: 1.1rem;
+  padding:  5px 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
+
+input:focus,
+textarea:focus {
+  /*   background: blue; */
+  transition: box-shadow 150ms ease-in;
+  outline: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  margin-top: 60px;
+
+  /*   height: 500px; */
+}
+
+.form-header {
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+/*   width: 50%; */
+  display: grid;
+  grid-template-areas: "a a b b"                      
+                        "c c c c"
+                        "d d d d";
+  /*   background: blueviolet; */
+  padding: 10px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.form-item:first-of-type {
+/*   outline: 2px solid orangered; */
+  grid-area: a;
+}
+
+.form-item:nth-of-type(2) {
+/*   outline: 2px solid purple; */
+  grid-area: b;
+}
+
+.form-item:nth-of-type(3) {
+/*   outline: 2px solid teal; */
+  grid-area: c;
+}
+
+.form-item:nth-of-type(4) {
+/*   outline: 2px solid teal; */
+  grid-area: d;
+}
+
+
+
+.form-item label {
+  /*   font-weight: 700; */
+}
+form > * {
+  color: var(--dark);
+  /*   outline: 4px solid teal; */
+  margin: 15px 5px;
+}
+
+
+.form-item button {
+  background: #00a5ff;
+  width: min-content;
+  border: none;
+  /*   border: 2px solid rgba(255,255,255,0.5); */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+/*   border-radius: 5px; */
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+/*   font-weight: 600; */
+}
+
+.form-item button:hover {
+  cursor: pointer;
+  /*   border: 2px solid rgba(255,255,255,0.8); */
+  transition: all 100ms ease-in;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
+}
+
+

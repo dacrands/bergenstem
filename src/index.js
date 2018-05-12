@@ -1,6 +1,7 @@
 import '../public/styles/index.css';
 import '../public/styles/menu.css';
 import '../public/styles/video.css';
+import '../public/styles/contact.css';
 import './menu.js';
 import './video.js';
 
