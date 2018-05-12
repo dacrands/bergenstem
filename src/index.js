@@ -1,6 +1,8 @@
 import '../public/styles/index.css';
 import '../public/styles/menu.css';
+import '../public/styles/video.css';
 import './menu.js';
+import './video.js';
 
 const about = document.querySelector('.about');
 const landing = document.querySelector('.landing-container');
