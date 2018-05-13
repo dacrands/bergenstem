@@ -7,6 +7,7 @@
     "postinstall": "webpack -p",
     "start": "node app.js",
     "dev": "webpack-dev-server --open -d",
+    "watch": "webpack --watch",
     "build": "webpack -p",
     "postbuild": "webpack -p"
   },

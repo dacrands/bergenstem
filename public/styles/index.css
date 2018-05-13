@@ -90,13 +90,13 @@ h3, h4, h5 {
     margin: 0;
     position: absolute;
     top: 0;
-    height: 65vh;
+    height: 70vh;
     width: 100%;
     overflow: hidden;
 }
 
 .overlay {
-    height: 65vh;
+    height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -106,20 +106,20 @@ h3, h4, h5 {
 
 .landing-container {
     /* outline: 4px solid black; */
-    height: 65vh;
+    height: 70vh;
     width: 100%;
 }
 
 .landing {
     overflow: hidden;
-    height: 65vh;
+    height: 70vh;
     width: 100%;
 }
 
 .landing-title {
     font-weight: 500;
-    color: rgb(46, 48, 47);
-    /* color: #bdbfc1; */
+    /* color: rgb(46, 48, 47); */
+    color: #e4e7eb;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.23);
     position: absolute;
     width: 100%;
@@ -138,15 +138,17 @@ h3, h4, h5 {
 ================= */
 .content {
     /* outline: 1px solid orangered; */
-    /* display: flex;
+    display: flex;
     justify-content: space-around;
-    flex-flow: wrap; */
-    display: grid;
+    flex-flow: wrap;
+    /* display: grid;
     grid-gap: 10%;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding:3%;
-    justify-content: center;
-    min-height: 35vh;
+    justify-content: center; */
+    min-height: 30vh;
+    /* padding: 2%; */
+
     /* align-content: center;    */
     /* align-items: center; */
 }
@@ -158,11 +160,12 @@ h3, h4, h5 {
     display: flex;
     flex-direction: column;
     padding: 15px;
+    margin: 15px;
     justify-self: center;
     /* justify-content: flex-end; */
     /* height: 200px; */
-    /* max-width: 300px; */
-    /* min-width: 100px; */
+    max-width: 400px;
+    min-width: 100px;
 }
 
 /* =================
@@ -186,7 +189,7 @@ h3, h4, h5 {
 
 .info {
     /* outline: 4px solid pink; */
-    min-height: 80vh;
+    min-height: 60vh;
     padding: 10%;
     display: grid;    
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));

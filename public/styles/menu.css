@@ -19,7 +19,7 @@
     position:   fixed;   
   }
   
-  nav {
+ .navbar {
       /* outline: 3px solid forestgreen; */
     position: fixed;
     z-index: 9999;
@@ -38,7 +38,7 @@
     background: rgba(0,0,0,0.9);
   }
   
-  nav ul {
+.navbar ul {
     /* outline: 3px solid blueviolet; */
     align-self: center;    
     list-style: none;
@@ -51,13 +51,13 @@
     
   }
   
-  nav ul > * {
+ .navbar ul > * {
       /* outline: 4px solid red; */
     align-self: center;
     /* padding:10px; */
     
   }
-  nav a {
+.navbar a {
       /* outline: 4px solid lime; */
     text-decoration: none;
     color: inherit;
@@ -67,9 +67,14 @@
   /*   width:100%; */
   }
   
-  nav a:hover {
+  .navbar a:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
+  }
+
+  .navbar__landing {
+    background: none;
+    padding: 15px;
   }
   
   .logo {
@@ -79,7 +84,7 @@
     font-size: 1.4rem;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     width: 100px;
     color: #F7F7F7;
     
@@ -144,19 +149,19 @@
   
   
   @media (max-width: 900px) {
-    nav {
+    .navbar {
       color: #dadada;
       display: flex;
       justify-content: space-between;
       padding: 10px 20px;
     }
 
-    nav a {
+    .navbar a {
       padding: 0;
       display: block;
     }
   
-    nav ul {
+    .navbar ul {
        /* outline: 1px solid teal; */
       display: block;
       height: inherit;
@@ -164,13 +169,13 @@
       padding: 10px;
     }
   
-    nav ul > * {
+    .navbar ul > * {
       /* outline: 4px solid blueviolet; */
       margin: 20px;
       text-align: right;
     }
     
-    nav .resource-menu ul {
+    .navbar .resource-menu ul {
       /* outline: 2px solid olive; */
       display: block;    
       background: white; 
@@ -178,7 +183,7 @@
       /* margin-left: -100px; */
     }
 
-    nav .resource-menu  a {
+    .navbar .resource-menu  a {
       padding: 10px;
     }
   
