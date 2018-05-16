@@ -89,6 +89,18 @@ nav a:hover {
     color: #F7F7F7;
     
   }
+
+.resource-button {
+    font-size: inherit;
+    background: inherit;
+    color: inherit;
+    border: none;
+}
+
+.resource-button:hover {
+  cursor: pointer;
+  color: white;
+}
   
  .resource-menu {
     /* outline: 4px solid blue; */
