@@ -22,6 +22,22 @@
   
     
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(() => {
+        var html = $("html");
+        var o = 0.00;
+        var duration = 300;
+        var tick = duration / 10;
+        var x = setInterval(() => {
+            o += .1;
+            html.css("opacity", o);
+            
+            if(o >= 1){
+                clearInterval(x);
+            }
+        }, tick);
+    })
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 <script src="/bundle.js"></script>
 
