@@ -6,8 +6,8 @@
   "scripts": {
     "postinstall": "webpack -p",
     "start": "node app.js",
-    "dev": "webpack-dev-server --open -d",
-    "watch": "webpack --watch",
+    "dev": "webpack-dev-server --open",
+    "watch": "webpack --watch && node app.js",
     "build": "webpack -p",
     "postbuild": "webpack -p"
   },
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
     "style-loader": "^0.21.0",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15",

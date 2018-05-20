@@ -1,13 +1,13 @@
-import '../public/styles/index.css';
-import '../public/styles/menu.css';
-import '../public/styles/video.css';
-import '../public/styles/contact.css';
-import '../public/styles/project-index.css';
-import '../public/styles/3sp.css';
+import './public/styles/index.css';
+import './public/styles/menu.css';
+import './public/styles/video.css';
+import './public/styles/contact.css';
+import './public/styles/project-index.css';
+import './public/styles/3sp.css';
 
-import './menu.js';
-import './images.js';
-import './video.js';
+import './public/scripts/menu.js';
+import './public/scripts/images.js';
+import './public/scripts/video.js';
 
 const about = document.querySelector('.about');
 const landing = document.querySelector('.landing-container');

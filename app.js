@@ -7,16 +7,19 @@ const express        = require('express'),
       passport       = require('passport'),
       localStrategy  = require('passport-local'),
       User           = require('./models/user'),
+      path           = require('path'),
       methodOverride = require('method-override');
 
 
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, '/src/views'));
 app.use(methodOverride('_method'));
 app.use(bodyParser.urlencoded({extended:true}));
 
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/src/public'));
 app.use(express.static(__dirname + '/dist'));
+
 
 // PASSPORT
 app.use(require('express-session')({
