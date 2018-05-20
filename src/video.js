@@ -2,7 +2,9 @@ const video = document.querySelector('.video-wrapper');
 const source = 'https://img.youtube.com/vi/' + video.dataset.embed + '/sddefault.jpg';
 const image = new Image();
 
-image.src = source;
+image.srcset = source;
+// image.dataset.src = source;
+image.classList.add('lazy');
 image.addEventListener('load', () => {
     video.appendChild(image);
 });

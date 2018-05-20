@@ -6,6 +6,7 @@ import '../public/styles/project-index.css';
 import '../public/styles/3sp.css';
 
 import './menu.js';
+import './images.js';
 import './video.js';
 
 const about = document.querySelector('.about');
