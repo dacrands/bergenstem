@@ -72,23 +72,23 @@ nav a:hover {
     text-decoration: none;
   }
 
-  .navbar__landing {
-    background: none;
-    padding: 15px;
-  }
+.navbar__landing {
+  background: none;
+  padding: 15px;
+}
+
+.logo {
+  /*   outline: 4px solid blueviolet; */
+  position: relative;
+  font-weight: 500;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  width: 100px;
+  color: #F7F7F7;
   
-  .logo {
-    /*   outline: 4px solid blueviolet; */
-    position: relative;
-    font-weight: 500;
-    font-size: 1.4rem;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    width: 100px;
-    color: #F7F7F7;
-    
-  }
+}
 
 .resource-button {
     font-size: inherit;

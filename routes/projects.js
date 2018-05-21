@@ -41,7 +41,7 @@ router.post('/', (req, res) => {
 });
 
 // NEW
-router.get('/new', (req, res) => {
+router.get('/new', isLoggedIn, (req, res) => {
     res.render('projects/new');
 });
 
